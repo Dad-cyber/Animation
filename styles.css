@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: black;
+}
+
+div.container div.ball {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+
+   /* transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(1, 0.02, 0, -1.21);*/
+}
+
+div.container div.ball {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(37, 204, 216);
+    border-radius: 35%;
+
+    transition-duration: 0.3s;
+    /*transition-timing-function: cubic-bezier(1, 0.02, 0, -1.21);*/
+}
+
+div.container:hover div.ball {
+    animation-duration: 4s;
+    animation-name: stylish-rotate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    /*transform: translateX(400px);*/
+    /*background-color: red;*/
+    cursor: pointer;
+    border-radius: 50%;
+    /*transform: rotateZ(120deg);*/
+    /* transform: scale(2); */
+    padding-right: 2px;
+}
+
+div.container:hover div.ball {
+    animation-duration: 4s;
+    animation-name: stylish-rotate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    /*transform: translateX(400px);*/
+    /*background-color: red;*/
+    /*cursor: pointer;*/
+    /* border-radius: 50%; */
+     /* transform: rotateZ(120deg); */
+    /* transform: scale(2); */
+}
+@keyframes stylish-rotate {
+    0% {
+        background-color: violet;
+        left: 500px;
+        top: 250px;
+    }
+    14% {
+        background-color: indigo;
+        left: 500px;
+        top: 250px;
+    }
+    28% {
+        background-color: blue;
+        left: 500px;
+        top: 250px;
+    }
+    42% {
+        background-color: green;
+        left: 500px;
+        top: 250px;
+    }
+    56% {
+        background-color: yellow;
+        left: 500px;
+        top: 250px;
+    }
+    70% {
+        background-color: orange;
+        left: 500px;
+        top: 250px;
+    }
+    84% {
+        background-color: red;
+        left: 500px;
+        top: 250px;
+    }
+    100% {
+        transform: rotateZ(360deg);
+        background-color: white;
+        border-radius: 20px;
+    }
+
+}
+
+.ball {
+  font-size:100px;
+  text-align: center;
+}
